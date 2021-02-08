@@ -27,8 +27,16 @@ const displayItems = items => {
     })
 }
 
+// Show Item Details
 const handleitemClick = (strMealThumb, idMeal) => {
-    console.log(strMealThumb, idMeal);
+    const itemdetailDiv = document.createElement('div');
+    itemdetailDiv.className = 'single-result d-flex flex-wrap justify-content-center'
+    itemdetailDiv.innerHTML = `
+    <div class="full-box">
+        <img src="${ item.strMealThumb }" alt="">
+        <h3>${item.strMeal}</h3>
+    </div>
+    `
 }
 
 
