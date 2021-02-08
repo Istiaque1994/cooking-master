@@ -21,12 +21,10 @@ searchBtn.addEventListener('click', (e) => {
     // console.log(searchText);
     if (searchText == "") { // if search input is empty show alert and clear innerHtml if exist
         // result.innerHTML = "";
-        // lyricsText.innerHTML = "";
         // alertNotification('empty-input', 'block');
         // setTimeout(() => alertNotification('empty-input', 'none'), 3000);
     } else {
         // result.innerHTML = "";
-        // lyricsText.innerHTML = "";
         searchItems(searchText);
     }
 
