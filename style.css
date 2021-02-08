@@ -1,41 +1,106 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-
 body {
-  background-color: blanchedalmond;
+background-color: blanchedalmond;
+font-family: "Roboto", sans-serif;
+color: #7d1a6d94;
+padding-top: 30px;
 }
-.header {
-  padding: 10px;
+.main-manu li a {
+text-align: center;
+text-decoration: none;
+font-family: "Roboto", sans-serif;
+font-size: 20px;
+font-weight: 700;
+color: #7d1a6d94;
 }
-.logo a {
-  text-align: center;
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  font-size: 40px;
-  font-weight: 700;
-  color: #7d1a6d94;
+.main-manu li a:hover{
+text-decoration: underline;
+color: #7d1a6d94;
 }
-.menu nav {
-  margin: 18px 0px;
+.main-manu li {
+padding-right: 40px;
 }
-.menu nav ul {
-  text-align: right;
+.main-manu li:last-child {
+padding-right: 40px;
 }
-.menu nav ul li {
-  display: inline-block;
-  list-style: none;
-  padding-right: 40px;
+#logo{
+text-align: center;
+text-decoration: none;
+font-family: "Roboto", sans-serif;
+font-size: 40px;
+font-weight: 700;
+color: #7d1a6d94;
 }
-.menu nav ul li:last-child {
-  padding-right: 0px;
+input#foodInput {
+font-size: 16px;
 }
-.menu nav ul li a {
-  text-align: center;
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  color: #7d1a6d94;
+button#search {
+font-size: 18px;
 }
-.search-area{
-  padding-top: 50px;
+.card{
+width: 250px;
+background-color: rgb(202 136 89 / 43%);
+border-radius: 10px;
+margin: 10px;
+}
+.card h1{
+text-align: center;
+text-decoration: none;
+font-family: "Roboto", sans-serif;
+font-size: 20px;
+font-weight: 700;
+color: #7d1a6d94;
+margin: 10px 0px;
+}
+.card img{
+border-radius: 10px 10px 0px 0px;
+}
+#foodsData{
+text-align: center;
+background-color: rgb(202 136 89 / 43%);
+border-radius: 30px;
+padding: 20px 0px;
+display: none;
+}
+.food-details img {
+width: 60%;
+border-radius: 30px;
+}
+.food-details h1{
+display: block;
+text-align: center;
+text-decoration: none;
+font-family: "Roboto", sans-serif;
+font-size: 40px;
+font-weight: 700;
+color: #7d1a6d94;
+margin-top: 24px;
+margin-bottom: 0px;
+}
+.food-details h2{
+display: block;
+text-align: center;
+text-decoration: none;
+font-family: "Roboto", sans-serif;
+font-size: 26px;
+font-weight: 700;
+color: #7d1a6d94;
+margin-top: 10px;
+margin-bottom: 0px;
+}
+.food-details h3{
+display: block;
+text-align: left;
+text-decoration: none;
+font-family: "Roboto", sans-serif;
+font-size: 20px;
+font-weight: 400;
+color: #7d1a6d94;
+margin-top: 10px;
+margin-bottom: 0px;
+margin-left: 20px;
+}
+.food-details{
+width: 100%;
+margin: 0 auto;
 }
