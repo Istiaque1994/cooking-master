@@ -3,15 +3,32 @@ const searchInput = document.getElementById("search-field");
 
 const searchItems = (searchText) => {
     const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchText}`
-     // Data Load
+    
+    // Data Load
     fetch(url)
     .then(res => res.json())
-    .then (data => console.log(data.meals))
+    .then (data => displayItems(data.meals))
 }
 
-// const displayItems = items => {
-//     console.log(items);
-// }
+const displayItems = items => {
+    const itemContainer = document.getElementById('item-container');
+
+    items.forEach(item => {
+        const itemDiv = document.createElement('div');
+        itemDiv.className = 'single-result d-flex flex-wrap justify-content-center'
+        itemDiv.innerHTML = `
+            <div class="box">
+                <img src="${ item.strMealThumb }" onclick="handleitemClick('${item.strMealThumb}', '${item.strMeal}')">
+                <h3 class="item-name">${item.strMeal}</h3>
+            </div>
+        `
+        itemContainer.appendChild(itemDiv);
+    })
+}
+
+const handleitemClick = (strMealThumb, strMeal) => {
+    console.log(strMealThumb, strMeal);
+}
 
 
 // Event listener
