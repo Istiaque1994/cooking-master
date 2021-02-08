@@ -39,7 +39,9 @@ body {
 .search-area{
   padding-top: 50px;
 }
-
+.main-area{
+  margin-top: 50px;
+}
 .box{
   width: 250px;
   border-radius: 10px;
@@ -59,6 +61,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 25px;
   font-weight: 700;
+  font-style: italic;
   color: #7d1a6d94;
   margin-top: 10px;
   margin-bottom: 10px;

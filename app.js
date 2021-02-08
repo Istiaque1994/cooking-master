@@ -10,24 +10,25 @@ const searchItems = (searchText) => {
     .then (data => displayItems(data.meals))
 }
 
+// Show Image Thumbnail & Titel
 const displayItems = items => {
     const itemContainer = document.getElementById('item-container');
 
     items.forEach(item => {
         const itemDiv = document.createElement('div');
-        itemDiv.className = 'single-result d-flex flex-wrap justify-content-center'
+        itemDiv.className = 'search-result d-flex flex-wrap justify-content-center'
         itemDiv.innerHTML = `
             <div class="box">
                 <img src="${ item.strMealThumb }" onclick="handleitemClick('${item.strMealThumb}', '${item.strMeal}')">
-                <h3 class="item-name">${item.strMeal}</h3>
+                <h3 class="item-name" onclick="handleitemClick('${item.strMealThumb}', '${item.idMeal}')">${item.strMeal}</h3>
             </div>
         `
         itemContainer.appendChild(itemDiv);
     })
 }
 
-const handleitemClick = (strMealThumb, strMeal) => {
-    console.log(strMealThumb, strMeal);
+const handleitemClick = (strMealThumb, idMeal) => {
+    console.log(strMealThumb, idMeal);
 }
 
 
