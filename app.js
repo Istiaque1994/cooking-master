@@ -53,6 +53,8 @@ const handleitemClick = async (idMeal) => {
             </div>
         </div>
          `;
+
+         // For List Area
          var div = document.getElementById("item-details-info");
          var ul = document.createElement("ul");
         
